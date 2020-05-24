@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  background-image: url("https://cdn.vox-cdn.com/thumbor/N0yqF1EsgJMkI7aGQeC3lK_lpuY=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19736261/vpavic_190731_z_flip_0247_1.jpg");
+
+  min-height: auto;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  font-family: 'Jost', sans-serif;
+  font-size: 20px;
+}
+
+.content {
+  max-width: 1400px;
+  padding: 1em;
+  margin: auto;
+}
+
+/* Subscribe form */
+.form-box {
+  position: center;
+  margin: 20px;
+  max-width: 1400px;
+  padding: 15px;
+  background-color: #555555;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  color: #111111;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #dddddd;
+}
+
+input[type=text]:focus {
+  background-color: #dddddd;
+  outline: none;
+}
+
+.subscribe {
+  background-color: darkorchid;
+  color: #dddddd;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  opacity: 0.9;
+}
+
+.subscribe:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 450px){
+  .content, .form-box {
+    margin-left: 50px;
+  }
+}
+
+/* Snackbar message */
+#snackbar {
+  visibility: hidden;
+  min-width: 300px;
+  margin-left: -150px;
+  background-color: #383838;
+  color: #f1f1f1;
+  text-align: center;
+  border-radius: 2px;
+  padding: 15px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+/* Back to top button */
+#topButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #818181;
+  color: #222222;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+/* Social media icons */
+.fab {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fab:hover {
+  opacity: 0.5;
+}
+
+.fa-github-square, .fa-instagram-square, .fa-linkedin {
+  background-color: #383838;
+  color: #f1f1f1;
+}
+
+/* Footer */
+.footer {
+  margin: auto;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #121212;
+  color: #f1f1f1;
+  text-align: center;
+}

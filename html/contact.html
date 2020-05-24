@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Compare</title>
+
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/9bc83885c7.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/table.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/subscribtion.js"></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+  <link href="../css/navbar.css" rel="stylesheet">
+  <link href="../css/contact.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top navigation for desktop -->
+<nav class="topnav">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a>Phones</a>
+      <ul class="dropdown-content">
+        <li><a href="apple.html">Apple</a></li>
+        <li><a href="huawei.html">Huawei</a></li>
+        <li><a href="oneplus.html">OnePlus</a></li>
+        <li><a href="samsung.html">Samsung</a></li>
+      </ul>
+    </li>
+    <li><a href="compare.html">Compare</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Side navigation for phone and tablet-->
+<div class="sidenav">
+  <a href="../index.html"><i class="fas fa-home"></i></a>
+  <div class="dropdown">
+    <button onclick="showMenu()" class="sidenav-button">
+      <i class="fas fa-mobile"></i>
+    </button>
+    <div id="dropMenu" class="phones-menu">
+      <a href="apple.html">Apple</a>
+      <a href="huawei.html">Huawei</a>
+      <a href="oneplus.html">OnePlus</a>
+      <a href="samsung.html">Samsung</a>
+    </div>
+  </div>
+  <a href="compare.html"><i class="fas fa-balance-scale"></i></a>
+  <a href="contact.html"><i class="fas fa-phone-alt"></i></a>
+</div>
+
+<!-- Page content -->
+<div class="content">
+
+  <form action="subscription.php" class="form-box">
+    <div class="subscription-form">
+      <h1>Subscribe to our newsletter.</h1>
+      <p>To subscribe fill in these informations:</p>
+      <hr>
+
+      <label for="first-name"><b>First name</b>
+        <input type="text" placeholder="First name" name="first-name" required>
+      </label>
+
+      <label for="last-name"><b>Last name</b>
+        <input type="text" placeholder="Last name" name="last-name" required>
+      </label>
+
+
+      <label for="email"><b>First name</b>
+        <input type="text" placeholder="Email" name="email" required>
+      </label>
+
+      <label class="checkbox">
+        <input type="checkbox" name="data-precessing">I agree to receive monthly updates.
+        <span class="checkmark"></span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" name="terms-conditions">I agree with the <a href="#" style="color: dodgerblue">Terms & Conditions</a>.
+        <span class="checkmark"></span>
+      </label>
+
+      <button type="submit" class="subscribe" onclick="snackbar()">Subscribe</button>
+    </div>
+  </form>
+
+</div>
+
+<!-- Snackbar subscription complete -->
+<div id="snackbar">Thank you for subscribing to our newsletter.</div>
+
+<!-- Footer and social media buttons -->
+<div class="footer">
+  <a class="fab fa-instagram-square" href="https://www.instagram.com/_.mike.v._/"></a>
+  <a class="fab fa-github-square" href="https://github.com/Mihai-V"></a>
+  <a class="fab fa-linkedin" href="https://www.linkedin.com/in/mihai-alexandru-vasilescu/"></a>
+
+  <p>&copy; Made by Mihai Vasilescu, 2020 </p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="index.html">
+
+  <title>Home</title>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/9bc83885c7.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/main.js"></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+  <link rel="icon" type="image">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Top navigation for desktop -->
+<nav class="topnav">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a>Phones</a>
+      <ul class="dropdown-content">
+        <li><a href="html/apple.html">Apple</a></li>
+        <li><a href="html/huawei.html">Huawei</a></li>
+        <li><a href="html/oneplus.html">OnePlus</a></li>
+        <li><a href="html/samsung.html">Samsung</a></li>
+      </ul>
+    </li>
+    <li><a href="html/compare.html">Compare</a></li>
+    <li><a href="html/contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Side navigation for phone and tablet-->
+<div class="sidenav">
+  <a href="#"><i class="fas fa-home"></i></a>
+  <div class="dropdown">
+    <button onclick="showMenu()" class="sidenav-button">
+      <i class="fas fa-mobile"></i>
+    </button>
+    <div id="dropMenu" class="phones-menu">
+      <a href="html/apple.html">Apple</a>
+      <a href="html/huawei.html">Huawei</a>
+      <a href="html/oneplus.html">OnePlus</a>
+      <a href="html/samsung.html">Samsung</a>
+    </div>
+  </div>
+  <a href="html/compare.html"><i class="fas fa-balance-scale"></i></a>
+  <a href="html/contact.html"><i class="fas fa-phone-alt"></i></a>
+</div>
+
+<!-- Page content -->
+
+<div class="content">
+
+  <!-- Slideshow images
+  <div class="slideshow">
+    <img class="slideshow-images" src="https://lcdn.altex.ro/Comunicatii/APPLE/SMT/11%20Pro/Untitled-1_155761e7.jpg" alt="iPhone 11 Pro">
+    <img class="slideshow-images" src="https://pocketnow.com/files/2020/03/HUAWEI-P40-Pro-1.jpg" alt="P40 Pro">
+    <img class="slideshow-images" src="https://ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2020/04/oneplus-8-main.jpg" alt="OP 8 Pro">
+    <img class="slideshow-images" src="https://images.samsung.com/ro/smartphones/galaxy-s20/images/kv/galaxy-s20_highlights_kv_00.jpg" alt="S20 Ultra">
+
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+     The dots/circles
+    <div class="slideshow-dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  </div>
+  -->
+
+  <section>
+    <img class="slideshow-images" src="https://lcdn.altex.ro/Comunicatii/APPLE/SMT/11%20Pro/Untitled-1_155761e7.jpg" alt="iPhone 11 Pro">
+    <img class="slideshow-images" src="https://pocketnow.com/files/2020/03/HUAWEI-P40-Pro-1.jpg" alt="P40 Pro">
+    <img class="slideshow-images" src="https://ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2020/04/oneplus-8-main.jpg" alt="OP 8 Pro">
+    <img class="slideshow-images" src="https://images.samsung.com/ro/smartphones/galaxy-s20/images/kv/galaxy-s20_highlights_kv_00.jpg" alt="S20 Ultra">
+  </section>
+
+  <div>
+    <h1>this sum text</h1>
+    <br>
+    <h2>this sum other text</h2>
+  </div>
+
+</div>
+<!-- Back to top button -->
+<button id="topButton" onclick="topFunction()" title="Go to top">
+  <i class="fas fa-angle-up"></i>
+</button>
+
+<!-- Footer and social media buttons -->
+<div class="footer">
+  <a class="fab fa-instagram-square" href="https://www.instagram.com/_.mike.v._/"></a>
+  <a class="fab fa-github-square" href="https://github.com/Mihai-V"></a>
+  <a class="fab fa-linkedin" href="https://www.linkedin.com/in/mihai-alexandru-vasilescu/"></a>
+
+  <p>&copy; Made by Mihai Vasilescu, 2020 </p>
+</div>
+
+</body>
+
+</html>

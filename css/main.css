@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+  font-size: 20px;
+  background: #222222;
+}
+
+/* Style page content */
+.content {
+  background: #111111;
+  max-width: 1400px;
+  padding: 1em;
+  color: ghostwhite;
+  margin: auto;
+}
+
+@media screen and (max-width: 450px){
+  .content {
+    margin-left: 50px;
+  }
+}
+
+/* Slideshow
+.slideshow {
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-images {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -20px;
+  padding: 5px;
+  color: #f1f1f1;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 0;
+}
+
+.prev:hover, .next:hover {
+  color: #888888;
+}
+
+.slideshow-dots {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #818181;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+img {
+  width: 1400px;
+  height: 650px;
+}
+*/
+
+.slideshow-images {
+  display: none;
+  width: 100%;
+}
+
+@media screen and (max-width: 450px){
+  .content {
+    margin-left: 50px;
+  }
+}
+
+/* Back to top button */
+#topButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #818181;
+  color: #222222;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+/* Social media icons */
+.fab {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fab:hover {
+  opacity: 0.5;
+}
+
+.fa-github-square, .fa-instagram-square, .fa-linkedin {
+  background-color: #383838;
+  color: #f1f1f1;
+}
+
+/* Footer */
+.footer {
+  margin: auto;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #222222;
+  color: #f1f1f1;
+  text-align: center;
+}

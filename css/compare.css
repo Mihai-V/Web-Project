@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+  font-size: 15px;
+  background: #121212;
+  padding: 10px;
+}
+
+.content {
+  background: #212121;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 1em;
+  color: ghostwhite;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  top: 0;
+  z-index: 10;
+  padding-bottom: 14px;
+}
+
+li {
+  list-style: none;
+  flex: 1;
+}
+
+li:last-child {
+  border-right: 1px solid whitesmoke;
+}
+
+button {
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-right: 0;
+  border-top: 0;
+  padding: 10px;
+  background: #555555;
+  font-size: 15px;
+  font-weight: bold;
+  height: 50px;
+  color: ghostwhite;
+}
+
+li.active button {
+  background: #383838;
+  color: #121212;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  background: #212121;
+  display: none;
+}
+
+td, th {
+  height: 50px;
+  border: 1px solid gray;
+  padding: 10px;
+  empty-cells: show;
+  text-align: left;
+}
+
+td+td, th+th {
+  text-align: center;
+  display: none;
+}
+
+td.default {
+  display: table-cell;
+}
+
+.bar-green {
+  border-top: 3px solid darkgreen;
+}
+
+.separator {
+  background: #818181;
+  font-weight: bold;
+}
+
+.price-number {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.price-sign {
+  position: relative;
+  top: -9px;
+  left: -2px;
+}
+
+.table-data {
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+.hide {
+  border: 0;
+  background: none;
+}
+
+@media screen and (min-width: 500px){
+
+
+  ul {
+    display: none;
+  }
+
+  td, th {
+    display: table-cell !important;
+    width: 330px;
+  }
+
+  td+td, th+th {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .content {
+    margin-left: 50px;
+  }
+}
+
+/* Back to top button */
+#topButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #818181;
+  color: #222222;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+/* Social media icons */
+.fab {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fab:hover {
+  opacity: 0.5;
+}
+
+.fa-github-square, .fa-instagram-square, .fa-linkedin {
+  background-color: #383838;
+  color: #f1f1f1;
+}
+
+/* Footer */
+.footer {
+  margin: auto;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #121212;
+  color: #f1f1f1;
+  text-align: center;
+}
